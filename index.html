@@ -23,76 +23,142 @@
   <!-- 1. Use appropriate css classes on nav element. -->
   <!-- 2. Add child elements as required. -->
 
-    <nav class="navbar navbar-light navbar-expand-xs navbar-expand-sm">
-      <div class="container-fluid">
-        <h2><a class="navbar-brand" href="#">QTrip</a></h2>
+  <nav class="navbar navbar-light navbar-expand-lg navbar-light bg-light p-3">
+        <a class="navbar-brand" href="#">QTrip</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarItems"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="navbar-collapse collapse justify-content-end"
-          id="navbarItems"
+          class="navbar-collapse collapse "id="navbarNavDropdown"
         >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav d-flex justify-content-end w-100">
             <li class="nav-item">
-              <a href="#" class="nav-link">Home</a>
+              <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Explore</a>
+              <a href="/pages/adventures" class="nav-link">Explore</a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav> 
+    </div>
+  </nav> 
 
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on the hero image container element. -->
   <!-- 2. Add child elements as required. -->
 
-  <div class="hero-image d-flex justify-content-center align-item-center flex-column text-center text-white ">
-    <div class="container">
+  
+  <div class="hero-image d-flex flex-column justify-content-center align-items-center text-white text-center">  
+    <div class="container" >
       <h1>Welcome to QTrip</h1>
       <p class="hero-subheading">
-        Explore the world with fantastic places to venture around
+         Explore the world with fantastic places to venture around
       </p>
       <input class="hero-input" placeholder="Search a City" />
     </div>
-  </div> 
-
+  </div>
 
   <div class="container">
     <!-- TODO: MODULE_LAYOUT -->
     <!-- 1. Create the grid like layout as required. -->
-    <div class="row">
+    <div class="content">
+     <div class="row">
+       <div class="col-12 col-sm-6 col-lg-3 mb-4">
+        <a href="pages/adventures/">
+          <div class="tile">
+            <img src="assets/bengaluru.jpg" />
+            <div class="tile-text text-center text-white">
+              <h5>Bangaluru</h5>
+              <p>100+ places</p>
+            </div>
+          </div>
+        </a>
+        </div>
       <div class="col-sm-6 col-lg-3 mb-4">
-        <a href="pages/adventures/">Bengaluru</a>
+        <a href="pages/adventures/">
+          <div class="tile">
+            <img src="assets/kolkata.jpg" />
+            <div class="tile-text text-center text-white">
+              <h5>Kolkata</h5>
+              <p>52+ places</p>
+            </div>
+          </div>
+        </a>
       </div>
       <div class="col-sm-6 col-lg-3 mb-4">
-        <a href="#">Kolkata</a>
+        <a href="pages/adventures/">
+          <div class="tile">
+            <img src="assets/goa.jpg" />
+            <div class="tile-text text-center text-white">
+              <h5>Goa</h5>
+              <p>160+ places</p>
+            </div>
+          </div>
+        </a>
       </div>
       <div class="col-sm-6 col-lg-3 mb-4">
-        <a href="#">Goa</a>
+        <a href="pages/adventures/">
+          <div class="tile">
+            <img src="assets/mumbai.jpg" />
+            <div class="tile-text text-center text-white">
+              <h5>Mumbai</h5>
+              <p>121+ places</p>
+            </div>
+          </div>
+        </a>
       </div>
       <div class="col-sm-6 col-lg-3 mb-4">
-        <a href="#">Mumbai</a>
+        <a href="pages/adventures/">
+          <div class="tile">
+            <img src="assets/singapore.jpg" />
+            <div class="tile-text text-center text-white">
+              <h5>Singapore/h5>
+              <p>89+ places</p>
+            </div>
+          </div>
+        </a>
       </div>
       <div class="col-sm-6 col-lg-3 mb-4">
-        <a href="#">Singapore</a>
+        <a href="pages/adventures/">
+          <div class="tile">
+            <img src="assets/dubai.jpg" />
+            <div class="tile-text text-center text-white">
+              <h5>Dubai</h5>
+              <p>74+ places</p>
+            </div>
+          </div>
+        </a>
       </div>
       <div class="col-sm-6 col-lg-3 mb-4">
-        <a href="#">Dubai</a>
+        <a href="pages/adventures/">
+          <div class="tile">
+            <img src="assets/malaysia.jpg" />
+            <div class="tile-text text-center text-white">
+              <h5>Malaysia</h5>
+              <p>172+ places</p>
+            </div>
+          </div>
+        </a>
       </div>
       <div class="col-sm-6 col-lg-3 mb-4">
-        <a href="#">Malaysia</a>
-      </div>
-      <div class="col-sm-6 col-lg-3 mb-4">
-        <a href="#">Paris</a>
+        <a href="pages/adventures/">
+          <div class="tile">
+            <img src="assets/paris.jpg" />
+            <div class="tile-text text-center text-white">
+              <h5>Paris</h5>
+              <p>150+ places</p>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
